@@ -8,7 +8,7 @@ user = raw_input("Chose one! rock, paper, scissors, spock, lizard?\n")
 random = randint(0,4)
 
 #deze if elif else kijtk wat het resultaat is van de willekeurig gegenereerde nummer in de functie hier boven
-#vervolgens koppeld die een nummer aan een string, 1 = paper , 3 = spok enzovoort
+#vervolgens koppeld die een nummer aan een string, 1 = paper , 3 = spock enzovoort
 if random == 0:
     computer = "rock"
 elif random == 1:
@@ -22,56 +22,57 @@ else:
 
 sys.stdout.write(' you have chosen: '+ user + '!\n')
 sys.stdout.write(' the computer has chosen: '+ computer + '!\n')
-#rock
+
+#rock, computer win siutuation
 if computer == "rock" and user == "lizard":
 	sys.stdout.write('the computer won! Rock smashes Lizard!\n')
 elif computer == "rock" and user == "scissors":
 	sys.stdout.write('the computer won! Rock crushes scissors\n')
-
+#user win situation
 elif computer == "rock" and user == "spock":
 	sys.stdout.write('the user won! spock vaporize rock\n')
 elif computer == "rock" and user == "paper":
 	sys.stdout.write('the user won! paper covers rock!\n')
 
-#lizard
+#lizard, computer win siutuation
 elif computer == "lizard" and user == "paper":
 	sys.stdout.write('the computer won! lizard eats paper!\n')
 elif computer == "lizard" and user == "spock":
 	sys.stdout.write('the computer won! lizard poisons spock!\n')
-
+#user win situation
 elif computer == "lizard" and user == "scissors":
 	sys.stdout.write('the user won! scissor decapitates lizard!\n')
 elif computer == "lizard" and user == "rock":
 	sys.stdout.write('the user won! rock crushes lizard!\n')
 
-#spock
+#spock, computer win siutuation
 elif computer == "spock" and user == "scissors":
 	sys.stdout.write('the computer won! spock smashes scissors!\n')
 elif computer == "spock" and user == "rock":
 	sys.stdout.write('the computer won! spock vaporizes rock!\n')
-
+#user win situation
 elif computer == "spock" and user == "paper":
 	sys.stdout.write('the user won! paper disproves spock\n')
 elif computer == "spock" and user == "lizard":
 	sys.stdout.write('the user won! lizard poisons spock!\n')
 
-#scissors
+#scissors, computer win siutuation
 elif computer == "scissors" and user == "paper":
 	sys.stdout.write('the computer won! scissors cuts paper\n')
 elif computer == "scissors" and user == "lizard":
 	sys.stdout.write('the computer won! scissors decapitates lizard\n')
-
+#user win situation
 elif computer == "scissors" and user == "spock":
 	sys.stdout.write('the user won! spock smashes scissors \n')
 elif computer == "scissors" and user == "rock":
 	sys.stdout.write('the user won! rock crushes scissors\n')
 
-#paper
+#paper, computer win siutuation
 elif computer == "paper" and user == "spock":
 	sys.stdout.write('the computer won! paper disproves spock!\n')
 elif computer == "paper" and user == "rock":
 	sys.stdout.write('the computer won! paper covers rock!\n')
-
+#user win situation
 elif computer == "paper" and user == "lizard":
 	sys.stdout.write('the user won! lizard eats paper!\n')
 elif computer == "paper" and user == "scissors":
